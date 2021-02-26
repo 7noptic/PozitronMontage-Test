@@ -35,16 +35,14 @@
           <div class="header__text">Цены ниже,<br>доставка быстрее!</div>
           <div class="header__search">
             <div class="header__search-img"><img src="img/search.svg" class="js-search" alt=""></div>
-            <form action="">
-              <div class="form-wrapper-header"><span><input type="search" class="form-control" placeholder="Генераторы озона"> </span><span><button type="submit">
-                    <div><img src="img/search.svg" alt=""></div>
-                  </button></span></div>
+            <form action="POST">
+              <div class="form-wrapper-header"><span><input type="search" class="form-control" placeholder="Генераторы озона"> </span><span><button type="submit"><img src="img/search.svg" alt=""></button></span></div>
             </form>
           </div>
           <div class="header__info">Волоколамское ш. 112, к.1с3а<br>Пн-Пт с 8:00 до 21:00, Сб-Вс с 9:00 до 17:00</div>
         </div>
         <div class="col-3 col-xl-2 d-flex justify-content-end">
-          <div class="header__tel d-flex align-items-center flex-wrap justify-content-between"><a href="tel:8 800 000 00 00" class="header__link">8 800 000 00 00 </a><a href="#" class="btn header__btn js-call">ЗАКАЗАТЬ ЗВОНОК </a><a href="#" class="header__icon"><img src="img/telegram.svg" alt=""> </a><a href="#" class="header__icon"><img src="img/whatsapp.svg" alt=""></a></div>
+          <div class="header__tel d-flex align-items-center flex-wrap justify-content-between"><a href="tel:88000000000" class="header__link">8 800 000 00 00 </a><a href="#" class="btn header__btn js-call">ЗАКАЗАТЬ ЗВОНОК </a><a href="#" class="header__icon"><img src="img/telegram.svg" alt=""> </a><a href="#" class="header__icon"><img src="img/whatsapp.svg" alt=""></a></div>
         </div>
       </div>
       <div class="row header__row d-flex align-items-center">
@@ -73,7 +71,7 @@
                   </ul>
                 </div>
                 <div class="d-none d-lg-flex col-lg-5 col-xl-6">
-                  <div class="header-catalog__img" style="background-image: url('img/menuhoverbg.jpg');"><img src="img/menuhover.png" alt=""></div>
+                  <div class="header-catalog__img" style="background-image: url('img/menuhoverbg-min.jpg');"><img src="img/menuhover.png" alt=""></div>
                 </div>
               </div>
             </div>
@@ -114,80 +112,89 @@
               </div>
             </div>
             <div class="basket-items">
-              <div class="basket-item" data-basket-id="1">
+              <div class="basket-item" data-basket-id="1" data-basket-price="25050" data-basket-discount="30">
                 <div class="container">
-                  <div class="row">
-                    <div class="col-1 d-flex align-items-center">
-                      <div class="basket-item__img"><img src="img/basket.jpg" alt=""></div>
-                    </div>
-                    <div class="col-4 d-flex align-flex-start align-items-center">
-                      <div class="basket-item__descr">
-                        <p class="basket-item__name">Ozmetr-W озонометр воды</p>
-                        <p class="basket-item__availability">В наличии</p>
+                  <div class="row"><a href="#" class="basket-item__img col-lg-1 col-md-3 col-sm-4 d-flex align-items-center">
+                      <div class="basket-item__img-wrap">
+                        <div class="basket-item__marker">-30%</div><img src="img/basket-min.jpg" alt="">
                       </div>
+                    </a>
+                    <div class="basket-item__descr col-lg-4 col-md-9 col-sm-7"><a href="#" class="basket-item__name">Ozmetr-W озонометр воды</a>
+                      <p class="basket-item__availability">В наличии</p>
                     </div>
-                    <div class="basket-item__price col-2">25 050 ₽</div>
-                    <div class="basket-item__count col-2 d-flex align-items-center"><button class="basket-item__count-prev">
-                        <div><img src="img/basketarr.svg" alt=""></div>
-                      </button> <input type="text" placeholder="1"> <button class="basket-item__count-next">
-                        <div><img src="img/basketarr.svg" alt=""></div>
-                      </button></div>
-                    <div class="basket-item__cost col-2">
+                    <div class="basket-item__price col-lg-2 col-md-3 col-sm-4">25 050 ₽</div>
+                    <div class="basket-item__count col-lg-2 col-md-3 col-sm-4 d-flex align-items-center"><button class="basket-item__count-prev js-basket-count-btn" data-delta="-1"><img src="img/basketarr.svg" alt=""></button> <input class="js-basket-count-input" value="1" type="text" placeholder="1"> <button class="basket-item__count-next js-basket-count-btn" data-delta="1"><img src="img/basketarr.svg" alt=""></button></div>
+                    <div class="basket-item__cost col-lg-2 col-md-3 col-sm-4">
                       <p class="basket-item__new">25 050 ₽</p>
-                      <p class="basket-item__old">25 050 ₽</p>
+                      <p class="basket-item__old">50 100 ₽</p>
                     </div>
-                    <div class="basket-item__delete col-1"><img src="img/delete.svg" alt=""></div>
+                    <div class="basket-item__delete col-lg-1 col-md-3 js-basket-del"><img src="img/delete.svg" alt=""></div>
                   </div>
                 </div>
               </div>
-              <div class="basket-item" data-basket-id="2">
+              <div class="basket-item" data-basket-id="2" data-basket-price="10000">
                 <div class="container">
-                  <div class="row">
-                    <div class="col-1 d-flex align-items-center">
-                      <div class="basket-item__img"><img src="img/basket.jpg" alt=""></div>
+                  <div class="row"><a href="#" class="basket-item__img col-lg-1 col-md-3 col-sm-4 d-flex align-items-center">
+                      <div class="basket-item__img-wrap"><img src="img/basket-min.jpg" alt=""></div>
+                    </a>
+                    <div class="basket-item__descr col-lg-4 col-md-9 col-sm-7"><a href="#" class="basket-item__name">Ozmetr-W озонометр воды</a>
+                      <p class="basket-item__availability">В наличии</p>
                     </div>
-                    <div class="col-4 d-flex align-flex-start align-items-center">
-                      <div class="basket-item__descr">
-                        <p class="basket-item__name">Ozmetr-W озонометр воды</p>
-                        <p class="basket-item__availability">В наличии</p>
+                    <div class="basket-item__price col-lg-2 col-md-3 col-sm-4">10 000 ₽</div>
+                    <div class="basket-item__count col-lg-2 col-md-3 col-sm-4 d-flex align-items-center"><button class="basket-item__count-prev js-basket-count-btn" data-delta="-1"><img src="img/basketarr.svg" alt=""></button> <input class="js-basket-count-input" value="1" type="text" placeholder="1"> <button class="basket-item__count-next js-basket-count-btn" data-delta="1"><img src="img/basketarr.svg" alt=""></button></div>
+                    <div class="basket-item__cost col-lg-2 col-md-3 col-sm-4">
+                      <p class="basket-item__new">10 000 ₽</p>
+                    </div>
+                    <div class="basket-item__delete col-lg-1 col-md-3 js-basket-del"><img src="img/delete.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="basket-item" data-basket-id="3" data-basket-price="25050" data-basket-discount="50">
+                <div class="container">
+                  <div class="row"><a href="#" class="basket-item__img col-lg-1 col-md-3 col-sm-4 d-flex align-items-center">
+                      <div class="basket-item__img-wrap">
+                        <div class="basket-item__marker">-30%</div><img src="img/basket-min.jpg" alt="">
                       </div>
+                    </a>
+                    <div class="basket-item__descr col-lg-4 col-md-9 col-sm-7"><a href="#" class="basket-item__name">Ozmetr-W озонометр воды</a>
+                      <p class="basket-item__availability">В наличии</p>
                     </div>
-                    <div class="basket-item__price col-2">25 050 ₽</div>
-                    <div class="basket-item__count col-2 d-flex align-items-center"><button class="basket-item__count-prev">
-                        <div><img src="img/basketarr.svg" alt=""></div>
-                      </button> <input type="text" placeholder="1"> <button class="basket-item__count-next">
-                        <div><img src="img/basketarr.svg" alt=""></div>
-                      </button></div>
-                    <div class="basket-item__cost col-2">
+                    <div class="basket-item__price col-lg-2 col-md-3 col-sm-4">25 050 ₽</div>
+                    <div class="basket-item__count col-lg-2 col-md-3 col-sm-4 d-flex align-items-center"><button class="basket-item__count-prev js-basket-count-btn" data-delta="-1"><img src="img/basketarr.svg" alt=""></button> <input class="js-basket-count-input" value="1" type="text" placeholder="1"> <button class="basket-item__count-next js-basket-count-btn" data-delta="1"><img src="img/basketarr.svg" alt=""></button></div>
+                    <div class="basket-item__cost col-lg-2 col-md-3 col-sm-4">
                       <p class="basket-item__new">25 050 ₽</p>
-                      <p class="basket-item__old">25 050 ₽</p>
+                      <p class="basket-item__old">50 100 ₽</p>
                     </div>
-                    <div class="basket-item__delete col-1"><img src="img/delete.svg" alt=""></div>
+                    <div class="basket-item__delete col-lg-1 col-md-3 js-basket-del"><img src="img/delete.svg" alt=""></div>
                   </div>
                 </div>
               </div>
             </div>
-            <form action="" id="basket" class="basket-form">
+            <form action="POST" id="basket" class="basket-form col-sm-12 col-md-12">
               <div class="basket-form">
                 <div class="basket-form__title">Информация о покупателе</div>
-                <div class="basket-form__input basket-form__input-name"><input name="name" type="text" placeholder="Ваше имя"></div>
-                <div class="d-flex">
+                <div class="basket-form__input basket-form__input-name"><input name="name" type="text" placeholder="Ваше имя" required></div>
+                <div class="d-flex basket-form__input-wrap">
                   <div class="w-50">
-                    <div class="basket-form__input"><input name="phone" type="text" placeholder="Ваш телефон"></div>
-                    <div class="basket-form__subtitle">Введите мобильный номер телефона*</div>
+                    <div class="basket-form__input"><input id="phone" name="phone" type="text" placeholder="Ваш телефон" required></div>
+                    <div class="basket-form__subtitle js-respose-phone">Введите мобильный номер телефона*</div>
                   </div>
                   <div class="w-50">
-                    <div class="basket-form__input"><input name="email" type="text" placeholder="Ваш еmail"></div>
-                    <div class="basket-form__subtitle">Введите адрес эл. почты для получения чека и уведомлений</div>
+                    <div class="basket-form__input"><input name="email" type="text" placeholder="Ваш еmail" required></div>
+                    <div class="basket-form__subtitle js-respose-email">Введите адрес эл. почты для получения чека и уведомлений</div>
                   </div>
                 </div>
                 <div class="basket-form__delivery">
                   <div class="basket-form__title">Доставка и самовывоз</div>
-                  <div class="basket-form__select"><select name="delivery">
-                      <option value="default" selected="selected" disabled="disabled">Выбрать доставку или самовывоз</option>
-                      <option value="delivery">Доставка</option>
-                      <option value="pickup">Самовывоз</option>
-                    </select></div>
+                  <div class="selectric">
+                    <div class="label"><span>Выбрать доставку или самовывоз</span> <b class="selectric-button"><img src="img/selectric-ar.svg" alt=""></b></div>
+                    <div class="selectric-options hidden">
+                      <ul>
+                        <li>Доставка</li>
+                        <li>Самовывоз</li>
+                      </ul>
+                    </div>
+                  </div>
                   <div class="basket-form__subtitle">Выберите область/регион для вычисления стоимости доставки</div>
                 </div>
                 <div class="basket-form__payment card-block">
@@ -195,15 +202,15 @@
                   <div class="card__payment-wrap">
                     <div class="card__payment-radio"><label>
                         <div class="card__payment-radio__top">
-                          <div class="img"><img src="img/card-payment-1.svg" alt=""></div><input type="radio" name="card-payment"> <span></span>
+                          <div class="img"><img src="img/card-payment-1.svg" alt=""></div><input type="radio" name="card-payment" value="Банковской картой" required> <span></span>
                         </div>
                         <div class="card__payment-radio__bot">Банковской картой</div>
                       </label></div>
-                    <div class="card__payment-radio"><label abel>
+                    <div class="card__payment-radio"><label>
                         <div class="card__payment-radio__top">
-                          <div class="img"><img src="img/card-payment-2.svg" alt=""></div><input type="radio" name="card-payment"> <span></span>
+                          <div class="img"><img src="img/card-payment-2.svg" alt=""></div><input type="radio" name="card-payment" value="Безналичный расчет для юр. лиц" required> <span></span>
                         </div>
-                        <div class="card__payment-radio__bot">Безналичный<br>расчет для юр. лиц</div>
+                        <div class="card__payment-radio__bot">Безналичный расчет для юр. лиц</div>
                       </label></div>
                   </div>
                 </div>
@@ -214,23 +221,26 @@
               </div>
               <div class="basket-total">
                 <div class="basket-total__sum basket-total__item row">
-                  <div class="col-6">Сумма товаров</div>
-                  <div class="col-6">1 660 ₽</div>
+                  <div class="col-12 col-sm-6">Сумма товаров</div>
+                  <div class="col-12 col-sm-6 d-flex justify-content-sm-end">
+                    <div class="basket-total__sum-old js-basket-sum-old">1 660 ₽</div>
+                    <div class="js-basket-sum">1 660 ₽</div>
+                  </div>
                 </div>
                 <div class="basket-total__delivery basket-total__item row">
-                  <div class="col-6">Доставка</div>
-                  <div class="col-6">+660 ₽</div>
+                  <div class="col-12 col-sm-6">Доставка</div>
+                  <div class="col-12 col-sm-6 d-flex justify-content-sm-end js-basket-delivery">+660 ₽</div>
                 </div>
                 <div class="basket-total__discount basket-total__item row">
-                  <div class="col-6">Итоговая скидка</div>
-                  <div class="col-6">-66 ₽</div>
+                  <div class="col-12 col-sm-6">Итоговая скидка</div>
+                  <div class="col-12 col-sm-6 d-flex justify-content-sm-end js-basket-discount">-66 ₽</div>
                 </div>
                 <div class="basket-total__price basket-total__item row">
-                  <div class="col-6">ИТОГО</div>
-                  <div class="col-6">1 660 ₽</div>
+                  <div class="col-12 col-sm-6">ИТОГО</div>
+                  <div class="col-12 col-sm-6 d-flex justify-content-sm-end js-basket-total">1 660 ₽</div>
                 </div>
               </div><button class="btn" type="submit">оформить заказ</button>
-              <div class="basket-policy"><input type="checkbox" class="form-control check help-form__check" name="agreement" id="form-call"> <label for="form-call" class="agreement help-form__agreement">Отправляя заявку, я соглашаюсь на обработку персональьных данных</label></div>
+              <div class="basket-policy"><input type="checkbox" class="form-control check help-form__check" name="agreement" id="form-call-2"> <label for="form-call-2" class="agreement help-form__agreement">Отправляя заявку, я соглашаюсь на обработку персональьных данных</label></div>
             </form>
           </div>
         </div>
@@ -285,7 +295,7 @@
             <div class="footer__text">2021 ТриОзон</div>
           </div>
           <div class="col-12 col-lg-7 d-flex align-items-center justify-content-center d-lg-block">
-            <nav id="footer-menu-copy"><a href="#">Карта сайта</a> <a href="#">Политика конфиденциальности</a> <a href="#">Подписка</a></nav>
+            <nav id="footer-menu-copy"><a href="#">Карта сайта</a> <a href="#">Политика конфиденциальности</a> <a href="#" class="js-subscribe">Подписка</a></nav>
           </div>
           <div class="col-12 col-lg-2 d-flex align-items-center justify-content-center d-lg-block">
             <div class="footer__oparin"><a href="#"><img src="img/oparin.svg" alt=""></a></div>
@@ -304,18 +314,18 @@
         <div class="modal-call__text">Заполните форму и мы Вам перезвоним</div>
         <div class="modal-form">
           <form action="post">
-            <div class="modal-form__wrapper"><span><input type="text" class="form-control form__input modal-form__input" placeholder="Ваше имя"> </span><span><input type="tel" class="form-control form__input modal-form__input" placeholder="Ваш телефон"> </span><button type="submit" class="btn modal-form__btn modal-call__btn">заказать звонок</button> <input type="checkbox" class="form-control check help-form__check" name="agreement" id="form-call"> <label for="form-call" class="agreement help-form__agreement">Отправляя заявку, я соглашаюсь на обработку персональьных данных</label></div>
+            <div class="modal-form__wrapper"><span><input type="text" class="form-control form__input modal-form__input" placeholder="Ваше имя"> </span><span><input type="tel" class="form-control form__input modal-form__input" placeholder="Ваш телефон"> </span><button type="submit" class="btn modal-form__btn modal-call__btn">заказать звонок</button> <input type="checkbox" class="form-control check help-form__check" name="agreement" id="form-call"> <label for="form-call" class="agreement help-form__agreement">Я согласен условиями предоставления услуг и обработкой моих персональных данных при нажатии “Заказать звонок”</label></div>
           </form>
         </div>
-        <div class="modal-call__exit"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.9336 6.00793L8.93359 10.0099L12.9336 14.0119L14.0683 12.8766L11.2031 10.0099L14.0683 7.14328L12.9336 6.00793Z" fill="black" />
-            <path d="M7.13277 6.00793L11.1328 10.0099L7.13277 14.0119L5.99807 12.8766L8.86333 10.0099L5.99807 7.14328L7.13277 6.00793Z" fill="black" />
-            <rect x="1" y="1.005" width="18" height="18.0099" rx="3" stroke="black" stroke-width="2" />
+        <div class="modal-call__exit"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.785 1.85779L1.85785 27.785C1.20696 28.4359 1.20695 29.4911 1.85785 30.142C2.50874 30.7929 3.56401 30.7929 4.2149 30.142L30.1421 4.21477C30.793 3.56387 30.793 2.5086 30.1421 1.85771C29.4913 1.20682 28.4359 1.20689 27.785 1.85779Z" fill="black" />
+            <path d="M4.21498 1.85779L30.1421 27.785C30.793 28.4359 30.793 29.4911 30.1422 30.142C29.4913 30.7929 28.436 30.7929 27.7851 30.142L1.85786 4.21477C1.20697 3.56388 1.20696 2.50861 1.85785 1.85771C2.50875 1.20682 3.56409 1.20689 4.21498 1.85779Z" fill="black" />
           </svg></div>
       </div>
     </section>
     <section class="modal-region">
       <div class="modal-region__wrapper">
+        <h2 class="title modal-region__title">Выбрать город</h2>
         <div class="modal-region__row">
           <p class="modal-region__city">Ваш город: <span class="js-select-city">Санкт-Петербург</span>?</p><a href="#" class="btn modal-region__btn js-region-close">да</a>
         </div>
@@ -363,48 +373,113 @@
           <li><a href="#" class="modal-region__link">Лондон</a></li>
           <li><a href="#" class="modal-region__link">Рим</a></li>
         </ul>
-        <div class="modal-region__exit"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.9336 6.00793L8.93359 10.0099L12.9336 14.0119L14.0683 12.8766L11.2031 10.0099L14.0683 7.14328L12.9336 6.00793Z" fill="black" />
-            <path d="M7.13277 6.00793L11.1328 10.0099L7.13277 14.0119L5.99807 12.8766L8.86333 10.0099L5.99807 7.14328L7.13277 6.00793Z" fill="black" />
-            <rect x="1" y="1.005" width="18" height="18.0099" rx="3" stroke="black" stroke-width="2" />
+        <div class="modal-region__exit"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.785 1.85779L1.85785 27.785C1.20696 28.4359 1.20695 29.4911 1.85785 30.142C2.50874 30.7929 3.56401 30.7929 4.2149 30.142L30.1421 4.21477C30.793 3.56387 30.793 2.5086 30.1421 1.85771C29.4913 1.20682 28.4359 1.20689 27.785 1.85779Z" fill="black" />
+            <path d="M4.21498 1.85779L30.1421 27.785C30.793 28.4359 30.793 29.4911 30.1422 30.142C29.4913 30.7929 28.436 30.7929 27.7851 30.142L1.85786 4.21477C1.20697 3.56388 1.20696 2.50861 1.85785 1.85771C2.50875 1.20682 3.56409 1.20689 4.21498 1.85779Z" fill="black" />
           </svg></div>
       </div>
     </section>
     <section class="modal-one-click">
       <div class="modal-one-click__wrapper">
-        <h2 class="title modal-call__title">Заказать звонок</h2>
+        <h2 class="title modal-call__title">Купить в 1 клик</h2>
+        <div class="d-flex justify-content-center">
+          <div class="help__line"></div>
+        </div>
+        <div class="modal-one-click__img"><img src="img/modal.jpg" alt=""></div>
+        <p class="modal-one-click__name">Ozmetr-W озонометр воды</p>
+        <p class="modal-one-click__price">25 050 ₽</p>
+        <div class="modal-call__text">Заполните форму и мы Вам перезвоним</div>
+        <div class="modal-form">
+          <form action="post">
+            <div class="modal-form__wrapper"><span><input type="tel" class="form-control form__input modal-form__input" placeholder="Ваш телефон"> </span><button type="submit" class="btn modal-form__btn modal-one-click__btn">подобрать</button> <input type="checkbox" class="form-control check help-form__check" name="agreement" id="form-one-click"> <label for="form-one-click" class="agreement help-form__agreement">Я согласен условиями предоставления услуг и обработкой моих персональных данных при нажатии “Заказать”</label></div>
+          </form>
+        </div>
+        <div class="modal-one-click__exit"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.785 1.85779L1.85785 27.785C1.20696 28.4359 1.20695 29.4911 1.85785 30.142C2.50874 30.7929 3.56401 30.7929 4.2149 30.142L30.1421 4.21477C30.793 3.56387 30.793 2.5086 30.1421 1.85771C29.4913 1.20682 28.4359 1.20689 27.785 1.85779Z" fill="black" />
+            <path d="M4.21498 1.85779L30.1421 27.785C30.793 28.4359 30.793 29.4911 30.1422 30.142C29.4913 30.7929 28.436 30.7929 27.7851 30.142L1.85786 4.21477C1.20697 3.56388 1.20696 2.50861 1.85785 1.85771C2.50875 1.20682 3.56409 1.20689 4.21498 1.85779Z" fill="black" />
+          </svg></div>
+      </div>
+    </section>
+    <section class="modal-assortment">
+      <div class="modal-assortment__wrapper">
+        <h2 class="title modal-call__title">Подобрать<br>оборудование</h2>
         <div class="d-flex justify-content-center">
           <div class="help__line"></div>
         </div>
         <div class="modal-call__text">Заполните форму и мы Вам перезвоним</div>
         <div class="modal-form">
           <form action="post">
-            <div class="modal-form__wrapper"><span><input type="text" class="form-control form__input modal-form__input" placeholder="Ваше имя"> </span><span><input type="tel" class="form-control form__input modal-form__input" placeholder="Ваш телефон"> </span><button type="submit" class="btn modal-form__btn modal-one-click__btn">заказать звонок</button> <input type="checkbox" class="form-control check help-form__check" name="agreement" id="form-one-click"> <label for="form-one-click" class="agreement help-form__agreement">Отправляя заявку, я соглашаюсь на обработку персональьных данных</label></div>
+            <div class="modal-form__wrapper"><span><input type="text" class="form-control form__input modal-form__input" placeholder="Ваше имя"> </span><span><input type="tel" class="form-control form__input modal-form__input" placeholder="Ваш телефон"> </span><span>
+                <div class="selectric">
+                  <div class="label"><span>Тип оборудования</span> <b class="selectric-button"><img src="img/selectric-ar.svg" alt=""></b></div>
+                  <div class="selectric-options hidden">
+                    <ul>
+                      <li>Тип</li>
+                      <li>Тип</li>
+                      <li>Тип</li>
+                      <li>Тип</li>
+                      <li>Тип</li>
+                      <li>Тип</li>
+                      <li>Тип</li>
+                      <li>Тип</li>
+                    </ul>
+                  </div>
+                </div>
+              </span><span><textarea name="your-comment" id="your-comment" cols="30" rows="10" placeholder="Ваш комментарий"></textarea> </span><button type="submit" class="btn modal-form__btn modal-one-click__btn">подобрать</button> <input type="checkbox" class="form-control check help-form__check" name="agreement" id="form-one-click"> <label for="form-one-click" class="agreement help-form__agreement">Я согласен условиями предоставления услуг и обработкой моих персональных данных при нажатии “Подобрать”</label></div>
           </form>
         </div>
-        <div class="modal-one-click__exit"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.9336 6.00793L8.93359 10.0099L12.9336 14.0119L14.0683 12.8766L11.2031 10.0099L14.0683 7.14328L12.9336 6.00793Z" fill="black" />
-            <path d="M7.13277 6.00793L11.1328 10.0099L7.13277 14.0119L5.99807 12.8766L8.86333 10.0099L5.99807 7.14328L7.13277 6.00793Z" fill="black" />
-            <rect x="1" y="1.005" width="18" height="18.0099" rx="3" stroke="black" stroke-width="2" />
+        <div class="modal-assortment__exit"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.785 1.85779L1.85785 27.785C1.20696 28.4359 1.20695 29.4911 1.85785 30.142C2.50874 30.7929 3.56401 30.7929 4.2149 30.142L30.1421 4.21477C30.793 3.56387 30.793 2.5086 30.1421 1.85771C29.4913 1.20682 28.4359 1.20689 27.785 1.85779Z" fill="black" />
+            <path d="M4.21498 1.85779L30.1421 27.785C30.793 28.4359 30.793 29.4911 30.1422 30.142C29.4913 30.7929 28.436 30.7929 27.7851 30.142L1.85786 4.21477C1.20697 3.56388 1.20696 2.50861 1.85785 1.85771C2.50875 1.20682 3.56409 1.20689 4.21498 1.85779Z" fill="black" />
           </svg></div>
       </div>
     </section>
-    <section class="modal-assortment">
+    <section class="modal-job">
       <div class="modal-assortment__wrapper">
-        <h2 class="title modal-assortment__title">Заказать звонок</h2>
+        <h2 class="title modal-call__title">Отправить резюме</h2>
         <div class="d-flex justify-content-center">
           <div class="help__line"></div>
         </div>
-        <div class="modal-assortment__text">Заполните форму и мы Вам перезвоним</div>
+        <div class="modal-call__text">Заполните форму и мы Вам перезвоним</div>
         <div class="modal-form">
           <form action="post">
-            <div class="modal-form__wrapper"><span><input type="text" class="form-control form__input modal-form__input" placeholder="Ваше имя"> </span><span><input type="tel" class="form-control form__input modal-form__input" placeholder="Ваш телефон"> </span><button type="submit" class="btn modal-form__btn modal-assortment__btn">заказать звонок</button> <input type="checkbox" class="form-control check help-form__check" name="agreement" id="form-assortment"> <label for="form-assortment" class="agreement help-form__agreement">Отправляя заявку, я соглашаюсь на обработку персональьных данных</label></div>
+            <div class="modal-form__wrapper"><span><input type="text" class="form-control form__input modal-form__input" placeholder="Ваше имя"> </span><span><input type="tel" class="form-control form__input modal-form__input" placeholder="Ваш телефон"> </span><span>
+                <div class="selectric">
+                  <div class="label"><span>Вакансия</span> <b class="selectric-button"><img src="img/selectric-ar.svg" alt=""></b></div>
+                  <div class="selectric-options hidden">
+                    <ul>
+                      <li>Вакансия</li>
+                      <li>Вакансия</li>
+                      <li>Вакансия</li>
+                      <li>Вакансия</li>
+                      <li>Вакансия</li>
+                    </ul>
+                  </div>
+                </div>
+              </span><span><textarea name="your-about" id="your-about" cols="30" rows="10" placeholder="Расскажите о себе"></textarea> </span><button type="submit" class="btn modal-form__btn modal-one-click__btn">Отправить</button> <input type="checkbox" class="form-control check help-form__check" name="agreement" id="form-one-click"> <label for="form-one-click" class="agreement help-form__agreement">Я согласен условиями предоставления услуг и обработкой моих персональных данных при нажатии “Отправить”</label></div>
           </form>
         </div>
-        <div class="modal-assortment__exit"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.9336 6.00793L8.93359 10.0099L12.9336 14.0119L14.0683 12.8766L11.2031 10.0099L14.0683 7.14328L12.9336 6.00793Z" fill="black" />
-            <path d="M7.13277 6.00793L11.1328 10.0099L7.13277 14.0119L5.99807 12.8766L8.86333 10.0099L5.99807 7.14328L7.13277 6.00793Z" fill="black" />
-            <rect x="1" y="1.005" width="18" height="18.0099" rx="3" stroke="black" stroke-width="2" />
+        <div class="modal-job__exit"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.785 1.85779L1.85785 27.785C1.20696 28.4359 1.20695 29.4911 1.85785 30.142C2.50874 30.7929 3.56401 30.7929 4.2149 30.142L30.1421 4.21477C30.793 3.56387 30.793 2.5086 30.1421 1.85771C29.4913 1.20682 28.4359 1.20689 27.785 1.85779Z" fill="black" />
+            <path d="M4.21498 1.85779L30.1421 27.785C30.793 28.4359 30.793 29.4911 30.1422 30.142C29.4913 30.7929 28.436 30.7929 27.7851 30.142L1.85786 4.21477C1.20697 3.56388 1.20696 2.50861 1.85785 1.85771C2.50875 1.20682 3.56409 1.20689 4.21498 1.85779Z" fill="black" />
+          </svg></div>
+      </div>
+    </section>
+    <section class="modal-subscribe">
+      <div class="modal-one-click__wrapper">
+        <h2 class="title modal-call__title">Подписаться</h2>
+        <div class="d-flex justify-content-center">
+          <div class="help__line"></div>
+        </div>
+        <div class="modal-call__text">Заполните форму и мы будем присылать вам самые интересные новости</div>
+        <div class="modal-form">
+          <form action="post">
+            <div class="modal-form__wrapper"><span><input type="text" class="form-control form__input modal-form__input" placeholder="Ваше Имя"> </span><span><input type="email" class="form-control form__input modal-form__input" placeholder="Ваш email"> </span><button type="submit" class="btn modal-form__btn modal-one-click__btn">подписаться</button> <input type="checkbox" class="form-control check help-form__check" name="agreement" id="form-one-click"> <label for="form-one-click" class="agreement help-form__agreement">Я согласен условиями предоставления услуг и обработкой моих персональных данных при нажатии “Подписаться”</label></div>
+          </form>
+        </div>
+        <div class="modal-subscribe__exit"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.785 1.85779L1.85785 27.785C1.20696 28.4359 1.20695 29.4911 1.85785 30.142C2.50874 30.7929 3.56401 30.7929 4.2149 30.142L30.1421 4.21477C30.793 3.56387 30.793 2.5086 30.1421 1.85771C29.4913 1.20682 28.4359 1.20689 27.785 1.85779Z" fill="black" />
+            <path d="M4.21498 1.85779L30.1421 27.785C30.793 28.4359 30.793 29.4911 30.1422 30.142C29.4913 30.7929 28.436 30.7929 27.7851 30.142L1.85786 4.21477C1.20697 3.56388 1.20696 2.50861 1.85785 1.85771C2.50875 1.20682 3.56409 1.20689 4.21498 1.85779Z" fill="black" />
           </svg></div>
       </div>
     </section>
